@@ -134,47 +134,7 @@ php7.2-mysql5.5:
     - develop
     - master
 
-php7.1-mariadb10.4:
-  variables:
-    PHP_VERSION: "7.1"
-    DATABASE_ENGINE_VERSION: "mariadb:10.4"
-  extends: .test-template
-  only:
-    - develop
-    - master
 
-php7.1-mysql5.7:
-  variables:
-    PHP_VERSION: "7.1"
-    DATABASE_ENGINE_VERSION: "mysql:5.7"
-  extends: .test-template
-  only:
-    - develop
-    - master
-
-php7.0-mariadb10.4:
-  variables:
-    PHP_VERSION: "7.0"
-    DATABASE_ENGINE_VERSION: "mariadb:10.4"
-  extends: .test-template
-  only:
-    - develop
-    - master
-
-php7.0-mariadb10.1:
-  variables:
-    PHP_VERSION: "7.0"
-    DATABASE_ENGINE_VERSION: "mariadb:10.1"
-  extends: .test-template
-
-php7.0-mysql5.7:
-  variables:
-    PHP_VERSION: "7.0"
-    DATABASE_ENGINE_VERSION: "mysql:5.7"
-  extends: .test-template
-  only:
-    - develop
-    - master
 
 .custom_functions: &custom_functions |
 
