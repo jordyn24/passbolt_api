@@ -234,9 +234,9 @@ return [
              * the following line and set the port accordingly
              */
             //'port' => 'non_standard_port_number',
-            'username' => env('DATASOURCES_DEFAULT_USERNAME', ''),
-            'password' => env('DATASOURCES_DEFAULT_PASSWORD', ''),
-            'database' => env('DATASOURCES_DEFAULT_DATABASE', ''),
+            'username' => env('DATASOURCES_DEFAULT_USERNAME', 'user'),
+            'password' => env('DATASOURCES_DEFAULT_PASSWORD', 'secret'),
+            'database' => env('DATASOURCES_DEFAULT_DATABASE', 'passbolt'),
             'ssl_key' => env('DATASOURCES_DEFAULT_SSL_KEY', ''),
             'ssl_cert' => env('DATASOURCES_DEFAULT_SSL_CERT', ''),
             'ssl_ca' => env('DATASOURCES_DEFAULT_SSL_CA', ''),
